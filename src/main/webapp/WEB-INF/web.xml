@@ -1,0 +1,83 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>Controller.SignUp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ContactUs</servlet-name>
+		<servlet-class>Controller.ContactUs</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactUs</servlet-name>
+		<url-pattern>/ContactUs</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StudentReg</servlet-name>
+		<servlet-class>Controller.StudentRegistration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentReg</servlet-name>
+		<url-pattern>/StudentReg</url-pattern>
+		<url-pattern>/addStudentReg</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>addYear</servlet-name>
+		<servlet-class>Controller.Admin.AddYear</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addYear</servlet-name>
+		<url-pattern>/AddYear</url-pattern>
+		<url-pattern>/admin/AddYear</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddUser</servlet-name>
+		<servlet-class>Controller.Admin.AddUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUser</servlet-name>
+		<url-pattern>/admin/AddUser</url-pattern>
+		<url-pattern>/AddUser</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>Controller.Admin.UpdateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/admin/UpdateUser</url-pattern>
+		<url-pattern>/UpdateUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DClass</servlet-name>
+		<servlet-class>Controller.Admin.DeleteClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DClass</servlet-name>
+		<url-pattern>/admin/DeleteClass</url-pattern>
+		<url-pattern>/DeleteClass</url-pattern>
+	</servlet-mapping>
+</web-app>
+
